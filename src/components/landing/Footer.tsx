@@ -13,11 +13,18 @@ const Footer = () => (
     <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between gap-10">
       {/* Logo & Socials */}
       <div className="flex flex-col items-center lg:items-start gap-6 min-w-[210px]">
-        <img
-          src={upvachiLogo}
-          alt="UpVachi Logo"
-          className="w-12 h-12 rounded-2xl border border-gray-800 shadow"
-        />
+        <div className="flex gap-2">
+          <a href="/" className="flex items-center gap-2">
+            <img
+              src={upvachiLogo}
+              alt="UpVachi Logo"
+              className="w-10 h-10 rounded-xl border border-gray-800 shadow"
+            />
+            <span className="text-xl font-extrabold text-white bg-clip-text drop-shadow-lg">
+              UpVachi
+            </span>
+          </a>
+        </div>
         <div className="flex gap-4 text-gray-500 text-2xl">
           <a
             href="https://www.facebook.com/upvachi"

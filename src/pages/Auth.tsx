@@ -92,27 +92,34 @@ export const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-6">
-      <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-0 bg-zinc-950/90 backdrop-blur-xl rounded-3xl border border-zinc-800/50 overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] relative">
-        {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900/20 via-transparent to-zinc-900/20 pointer-events-none rounded-3xl" />
+    <div
+      className="
+        min-h-screen
+        w-full h-full max-w-6xl mx-auto
+        p-4 md:p-6
+        grid lg:grid-cols-2
+        items-center justify-center
+        bg-transparent
+        rounded-3xl
+        overflow-hidden
+        relative
+      "
+    >
+      {/* Left Side - Premium Illustration */}
+      <LeftIllustration />
 
-        {/* Left Side - Premium Illustration */}
-        <LeftIllustration />
-
-        {/* Right Side - Authentication Form */}
-        <RightForm
-          isLogin={isLogin}
-          handleInputChange={handleInputChange}
-          formData={formData}
-          errors={errors}
-          handleSubmit={handleSubmit}
-          isLoading={isLoading}
-          switchMode={switchMode}
-          showPassword={showPassword}
-          setShowPassword={setShowPassword}
-        />
-      </div>
+      {/* Right Side - Authentication Form */}
+      <RightForm
+        isLogin={isLogin}
+        handleInputChange={handleInputChange}
+        formData={formData}
+        errors={errors}
+        handleSubmit={handleSubmit}
+        isLoading={isLoading}
+        switchMode={switchMode}
+        showPassword={showPassword}
+        setShowPassword={setShowPassword}
+      />
     </div>
   );
 };

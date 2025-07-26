@@ -23,23 +23,23 @@ const RightForm = ({
   setShowPassword: (show: boolean) => void;
 }) => {
   return (
-    <div className="bg-gradient-to-br from-zinc-950 via-black to-zinc-900 p-10 lg:p-14 flex flex-col justify-center bg-black/60 backdrop-blur-sm border-l border-zinc-800/30 relative z-10">
+    <div className="w-full h-full lg:bg-gradient-to-br from-gray-950 via-black to-gray-900 p-10 lg:p-14 flex flex-col justify-center backdrop-blur-sm lg:border-l md:border-gray-800/30 relative z-10 rounded-r-4xl">
       <div className="max-w-sm mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-white mb-3 font-mono tracking-tight">
             {isLogin ? "Welcome back" : "Create account"}
           </h1>
-          <p className="text-zinc-400 text-base leading-relaxed">
+          <p className="text-gray-400 text-base leading-relaxed">
             {isLogin
-              ? "Enter your credentials to access your dashboard"
+              ? "Enter your credentials to access the dashboard"
               : "Get started with your premium UpVachi account"}
           </p>
         </div>
 
         {/* Social Login */}
         {/* <div className="space-y-4 mb-8">
-              <button className="w-full flex items-center justify-center gap-4 px-6 py-4 bg-zinc-900/80 hover:bg-zinc-800/80 border border-zinc-700/50 rounded-2xl transition-all duration-300 text-white text-base font-medium group backdrop-blur-sm shadow-lg hover:shadow-xl hover:scale-[1.02]">
+              <button className="w-full flex items-center justify-center gap-4 px-6 py-4 bg-gray-900/80 hover:bg-gray-800/80 border border-gray-700/50 rounded-2xl transition-all duration-300 text-white text-base font-medium group backdrop-blur-sm shadow-lg hover:shadow-xl hover:scale-[1.02]">
                 <img
                   src={GoogleColorIcon}
                   alt="Google Icon"
@@ -52,20 +52,20 @@ const RightForm = ({
 
             <div className="relative my-8">
               <div className="absolute inset-0 flex items-center">
-              <div className="relative w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-6" />
+              <div className="relative w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent my-6" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-black text-zinc-500 font-medium">
+                <span className="px-4 bg-black text-gray-500 font-medium">
                   or continue with email
                 </span>
               </div>
             </div> */}
 
         {/* Form */}
-        <div className="space-y-5 font-sans">
+        <form onSubmit={handleSubmit} className="space-y-5 font-sans">
           {!isLogin && (
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label className="block text-sm font-semibold text-gray-300 mb-2">
                 Full name
               </label>
               <input
@@ -73,10 +73,10 @@ const RightForm = ({
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3.5 bg-zinc-900/60 border rounded-xl text-white text-sm placeholder-zinc-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
+                className={`w-full px-4 py-3.5 bg-gray-950/60 border rounded-xl text-white text-sm placeholder-gray-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
                   errors.fullName
                     ? "border-red-500/50 bg-red-950/20"
-                    : "border-zinc-700/50 hover:border-zinc-600/50"
+                    : "border-gray-700/50 hover:border-gray-600/50"
                 }`}
                 placeholder="John"
               />
@@ -87,7 +87,7 @@ const RightForm = ({
           )}
 
           <div>
-            <label className="block text-sm font-semibold text-zinc-300 mb-2">
+            <label className="block text-sm font-semibold text-gray-300 mb-2">
               Email address
             </label>
             <input
@@ -95,10 +95,10 @@ const RightForm = ({
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className={`w-full px-4 py-3.5 bg-zinc-900/60 border rounded-xl text-white text-sm placeholder-zinc-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
+              className={`w-full px-4 py-3.5 bg-gray-950/60 border rounded-xl text-white text-sm placeholder-gray-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
                 errors.email
                   ? "border-red-500/50 bg-red-950/20"
-                  : "border-zinc-700/50 hover:border-zinc-600/50"
+                  : "border-gray-700/50 hover:border-gray-600/50"
               }`}
               placeholder="you@company.com"
             />
@@ -108,7 +108,7 @@ const RightForm = ({
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-zinc-300 mb-2">
+            <label className="block text-sm font-semibold text-gray-300 mb-2">
               Password
             </label>
             <div className="relative">
@@ -117,10 +117,10 @@ const RightForm = ({
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3.5 pr-12 bg-zinc-900/60 border rounded-xl text-white text-sm placeholder-zinc-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
+                className={`w-full px-4 py-3.5 pr-12 bg-gray-950/60 border rounded-xl text-white text-sm placeholder-gray-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
                   errors.password
                     ? "border-red-500/50 bg-red-950/20"
-                    : "border-zinc-700/50 hover:border-zinc-600/50"
+                    : "border-gray-700/50 hover:border-gray-600/50"
                 }`}
                 placeholder={
                   isLogin ? "Enter your password" : "Create a password"
@@ -129,7 +129,7 @@ const RightForm = ({
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 transition-colors p-1"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 transition-colors p-1"
               >
                 {showPassword ? (
                   <EyeOff className="w-4 h-4" />
@@ -145,7 +145,7 @@ const RightForm = ({
 
           {!isLogin && (
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label className="block text-sm font-semibold text-gray-300 mb-2">
                 Confirm password
               </label>
               <input
@@ -153,10 +153,10 @@ const RightForm = ({
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3.5 bg-zinc-900/60 border rounded-xl text-white text-sm placeholder-zinc-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
+                className={`w-full px-4 py-3.5 bg-gray-950/60 border rounded-xl text-white text-sm placeholder-gray-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 backdrop-blur-sm ${
                   errors.confirmPassword
                     ? "border-red-500/50 bg-red-950/20"
-                    : "border-zinc-700/50 hover:border-zinc-600/50"
+                    : "border-gray-700/50 hover:border-gray-600/50"
                 }`}
                 placeholder="Confirm your password"
               />
@@ -169,17 +169,10 @@ const RightForm = ({
           )}
 
           {isLogin && (
-            <div className="flex items-center justify-between text-sm">
-              <label className="flex items-center gap-3 text-zinc-400 cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="w-4 h-4 rounded border-zinc-600 bg-zinc-800 text-white focus:ring-white/20 accent-white"
-                />
-                Remember me
-              </label>
+            <div className="flex items-center justify-end text-sm">
               <button
                 type="button"
-                className="text-white hover:text-zinc-300 transition-colors font-medium"
+                className="text-white hover:text-gray-300 transition-colors font-medium"
               >
                 Forgot password?
               </button>
@@ -188,13 +181,12 @@ const RightForm = ({
 
           <div className="flex items-center justify-center mt-8">
             <button
-              type="button"
-              onClick={handleSubmit}
+              type="submit"
               disabled={isLoading}
-              className={`transition-all duration-300 flex items-center justify-center font-semibold shadow-lg disabled:opacity-70 disabled:cursor-not-allowed ${
+              className={`transition-all duration-300 flex items-center justify-center font-semibold shadow-lg disabled:opacity-70 disabled:cursor-not-allowed text-gray-950 ${
                 isLoading
                   ? "w-12 h-12 p-0 rounded-full bg-white"
-                  : "w-full py-4 px-6 rounded-full bg-white hover:bg-zinc-100 gap-3 hover:shadow-xl hover:scale-[1.02]"
+                  : "w-full py-4 px-6 rounded-full bg-white hover:bg-gray-100 gap-3 hover:shadow-xl hover:scale-[1.02]"
               }`}
             >
               {isLoading ? (
@@ -207,15 +199,15 @@ const RightForm = ({
               )}
             </button>
           </div>
-        </div>
+        </form>
 
         {/* Switch Mode */}
         <div className="text-center mt-8">
-          <p className="text-zinc-400 text-base">
+          <p className="text-gray-400 text-base">
             {isLogin ? "Don't have an account? " : "Already have an account? "}
             <button
               onClick={switchMode}
-              className="text-white hover:text-zinc-300 transition-colors font-semibold ml-1"
+              className="text-white hover:text-gray-300 transition-colors font-semibold ml-1"
             >
               {isLogin ? "Sign up" : "Sign in"}
             </button>
@@ -223,13 +215,13 @@ const RightForm = ({
         </div>
 
         {!isLogin && (
-          <div className="mt-6 text-xs text-zinc-500 text-center leading-relaxed">
+          <div className="mt-6 text-xs text-gray-500 text-center leading-relaxed">
             By creating an account, you agree to our{" "}
-            <a href="#" className="text-white hover:text-zinc-300 font-medium">
+            <a href="#" className="text-white hover:text-gray-300 font-medium">
               Terms of Service
             </a>{" "}
             and{" "}
-            <a href="#" className="text-white hover:text-zinc-300 font-medium">
+            <a href="#" className="text-white hover:text-gray-300 font-medium">
               Privacy Policy
             </a>
           </div>

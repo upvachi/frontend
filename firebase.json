@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "upvachi",
+    "target": "upvachi-live",
     "public": "dist",
     "ignore": [
       "firebase.json",

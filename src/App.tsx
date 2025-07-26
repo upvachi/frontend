@@ -3,7 +3,7 @@ import { Landing, Auth, Privacy, Terms } from "./pages";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="bg-gray-950 min-h-screen">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/auth/:mode" element={<Auth />} />
