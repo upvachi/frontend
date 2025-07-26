@@ -1,5 +1,16 @@
 {
   "projects": {
-    "default": "upvachi"
-  }
+    "default": "upvachi",
+    "staging": "upvachi"
+  },
+  "targets": {
+    "upvachi": {
+      "hosting": {
+        "upvachi": [
+          "upvachi-live"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
