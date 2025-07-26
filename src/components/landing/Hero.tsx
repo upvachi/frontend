@@ -1,5 +1,6 @@
 import React from "react";
-import upvachiLogo from "../../assets/images/upvachi.png";
+import upvachiLogo from "/web-app-manifest-512x512.png";
+import heroBird from "../../assets/images/hero-bird.png";
 
 const Hero: React.FC = () => {
   const nodes = [
@@ -115,39 +116,11 @@ const Hero: React.FC = () => {
 
       {/* Right SVG(Desktop only) */}
       <div className="hidden lg:flex flex-1 items-center justify-center h-full">
-        <svg
-          width="420"
-          height="420"
-          viewBox="0 0 420 420"
-          fill="none"
-          className="block"
-        >
-          <defs>
-            <radialGradient id="glower" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#4A90E2" stopOpacity="1" />
-              <stop offset="80%" stopColor="#8E2DE2" stopOpacity="0.70" />
-              <stop offset="100%" stopColor="#FF6B6B" stopOpacity="0.15" />
-            </radialGradient>
-          </defs>
-          <circle
-            cx="210"
-            cy="210"
-            r="180"
-            fill="url(#glower)"
-            filter="url(#glow)"
-          />
-          <circle cx="210" cy="210" r="58" fill="#fff" fillOpacity="0.11" />
-          <circle
-            cx="210"
-            cy="210"
-            r="120"
-            stroke="#4A90E2"
-            strokeDasharray="8,26"
-            strokeWidth="3"
-            fill="none"
-            opacity="0.28"
-          />
-        </svg>
+        <img
+          src={heroBird}
+          alt="UpVachi AI Bird"
+          className="w-[500px] max-w-full h-auto rounded-[2rem]"
+        />
       </div>
     </section>
   );
