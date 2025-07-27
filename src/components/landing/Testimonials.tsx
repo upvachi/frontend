@@ -143,13 +143,13 @@ function Testimonials() {
   );
 
   return (
-    <section id="testimonials" className="py-20 bg-gray-950 relative overflow-hidden">
+    <section id="testimonials" className="py-20 bg-zinc-950 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Loved by Creators Worldwide
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Join thousands of creators who've found their digital voice with
             UpVachi
           </p>
@@ -158,7 +158,7 @@ function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="keen-slider__slide">
               <div
-                className={`group bg-gradient-to-br ${testimonial.gradient} rounded-3xl p-8 border border-gray-700/70 backdrop-blur-sm hover:shadow-xl transition-all duration-300 transform hover:scale-110`}
+                className={`group bg-gradient-to-br ${testimonial.gradient} rounded-3xl p-8 border border-zinc-700/70 backdrop-blur-sm hover:shadow-xl transition-all duration-300 transform hover:scale-110`}
               >
                 <StarRow count={testimonial.rating || 5} />
                 <div className="mb-4">
@@ -172,14 +172,14 @@ function Testimonials() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-gray-300" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-zinc-700 to-zinc-600 rounded-full flex items-center justify-center">
+                      <User className="w-6 h-6 text-zinc-300" />
                     </div>
                     <div>
                       <p className="font-semibold text-white">
                         {testimonial.author}
                       </p>
-                      <p className="text-sm text-gray-300">
+                      <p className="text-sm text-zinc-300">
                         {testimonial.role}
                       </p>
                     </div>
@@ -190,7 +190,7 @@ function Testimonials() {
                     >
                       {testimonial.platform}
                     </div>
-                    <p className="text-xs text-gray-200">
+                    <p className="text-xs text-zinc-200">
                       {testimonial.followers} followers
                     </p>
                   </div>

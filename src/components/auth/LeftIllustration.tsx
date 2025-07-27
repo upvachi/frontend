@@ -5,7 +5,7 @@ import upvachiLogo from "/apple-touch-icon.png";
 const LeftIllustration = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-full bg-gradient-to-tl from-gray-950 via-black to-gray-900 p-10 lg:p-14 flex-col justify-around items-center relative overflow-hidden hidden lg:flex rounded-l-4xl">
+    <div className="w-full h-full bg-gradient-to-tl from-zinc-950 via-black to-zinc-900 p-10 lg:p-14 flex-col justify-around items-center relative overflow-hidden hidden lg:flex rounded-l-4xl">
       <div
         className="flex items-center gap-2 absolute group top-6 left-6 cursor-pointer"
         onClick={() => navigate("/")}
@@ -22,13 +22,13 @@ const LeftIllustration = () => {
       </div>
       {/* Premium Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-white/5 to-gray-400/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-white/5 to-zinc-400/5 rounded-full blur-3xl animate-pulse" />
         <div
-          className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-gradient-to-r from-gray-300/5 to-white/5 rounded-full blur-3xl animate-pulse"
+          className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-gradient-to-r from-zinc-300/5 to-white/5 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-r from-gray-400/3 to-white/3 rounded-full blur-3xl animate-pulse"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-r from-zinc-400/3 to-white/3 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "2s" }}
         />
       </div>
@@ -482,21 +482,21 @@ const LeftIllustration = () => {
         </svg>
 
         {/* Premium feature callouts */}
-        <div className="absolute top-6 right-6 bg-black/60 backdrop-blur-lg rounded-2xl px-4 py-3 border border-gray-700/50 shadow-xl">
+        <div className="absolute top-6 right-6 bg-black/60 backdrop-blur-lg rounded-2xl px-4 py-3 border border-zinc-700/50 shadow-xl">
           <div className="flex items-center gap-3 text-white text-sm font-medium">
             <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg shadow-green-400/50" />
             <span>99.9% Uptime</span>
           </div>
         </div>
 
-        <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-lg rounded-2xl px-4 py-3 border border-gray-700/50 shadow-xl">
+        <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-lg rounded-2xl px-4 py-3 border border-zinc-700/50 shadow-xl">
           <div className="flex items-center gap-3 text-white text-sm font-medium">
             <Zap className="w-4 h-4 text-white animate-pulse" />
             <span>AI Powered</span>
           </div>
         </div>
 
-        <div className="absolute top-1/2 right-6 bg-black/60 backdrop-blur-lg rounded-2xl px-4 py-3 border border-gray-700/50 shadow-xl">
+        <div className="absolute top-1/2 right-6 bg-black/60 backdrop-blur-lg rounded-2xl px-4 py-3 border border-zinc-700/50 shadow-xl">
           <div className="flex items-center gap-3 text-white text-sm font-medium">
             <Shield className="w-4 h-4 text-white" />
             <span>Enterprise Grade</span>

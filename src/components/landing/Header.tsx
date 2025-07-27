@@ -45,7 +45,7 @@ const Header = () => {
         }`}
       >
         <nav
-          className="mx-auto px-4 flex justify-between items-center h-16 bg-[#101726]/90 border-b border-[#232347]
+          className="mx-auto px-4 flex justify-between items-center h-16 bg-zinc-950/90 border-b border-[#232347]
           backdrop-blur-md
           transition-colors duration-300"
         >
@@ -61,7 +61,7 @@ const Header = () => {
               <img
                 src={upvachiLogo}
                 alt="UpVachi Logo"
-                className="w-10 h-10 rounded-xl border border-gray-800 shadow"
+                className="w-10 h-10 rounded-xl border border-zinc-800 shadow"
               />
               <span className="text-xl font-extrabold text-white bg-clip-text drop-shadow-lg">
                 UpVachi
@@ -73,7 +73,7 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-medium transition text-gray-200 hover:text-[#35A7FF]"
+                className="font-medium transition text-zinc-200 hover:text-[#35A7FF]"
               >
                 {link.name}
               </a>
@@ -83,7 +83,7 @@ const Header = () => {
           <div className="flex gap-4">
             <a
               href="/auth/login"
-              className="p-2 rounded-xl font-bold hover:bg-gray-800 transition-all text-white"
+              className="p-2 rounded-xl font-bold hover:bg-zinc-800 transition-all text-white"
             >
               Sign In
             </a>

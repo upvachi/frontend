@@ -40,7 +40,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-gray-950 relative">
+    <section id="faq" className="py-20 bg-zinc-950 relative">
       {/* Neural Background */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 800">
@@ -60,7 +60,7 @@ const FAQ = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Everything you need to know about UpVachi
           </p>
         </div>
@@ -70,21 +70,21 @@ const FAQ = () => {
             <div key={index} className="mb-6">
               <button
                 onClick={() => setOpenFAQ(openFAQ === index ? -1 : index)}
-                className="w-full bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-2xl p-6 text-left border border-gray-700 backdrop-blur-sm hover:border-[#35A7FF]/50 transition-all duration-300 flex items-center justify-between group"
+                className="w-full bg-gradient-to-br from-zinc-900/80 to-zinc-800/80 rounded-2xl p-6 text-left border border-zinc-700 backdrop-blur-sm hover:border-[#35A7FF]/50 transition-all duration-300 flex items-center justify-between group"
               >
                 <h3 className="text-lg font-semibold text-white pr-4 group-hover:text-[#35A7FF] transition-colors duration-300">{faq.question}</h3>
                 <div className="flex-shrink-0">
                   {openFAQ === index ? (
                     <ChevronUp className="w-6 h-6 text-[#35A7FF]" />
                   ) : (
-                    <ChevronDown className="w-6 h-6 text-gray-400 group-hover:text-[#35A7FF] transition-colors duration-300" />
+                    <ChevronDown className="w-6 h-6 text-zinc-400 group-hover:text-[#35A7FF] transition-colors duration-300" />
                   )}
                 </div>
               </button>
               
               {openFAQ === index && (
                 <div className="bg-gradient-to-br from-[#35A7FF]/10 to-[#824DFF]/10 rounded-2xl mt-3 p-6 border border-[#35A7FF]/20 backdrop-blur-sm">
-                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                  <p className="text-zinc-300 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>

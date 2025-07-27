@@ -93,7 +93,7 @@ const Platforms = () => {
   ];
 
   return (
-    <section id="platforms" className="py-20 bg-gray-950 relative">
+    <section id="platforms" className="py-20 bg-zinc-950 relative">
       {/* Neural Background */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 800">
@@ -135,7 +135,7 @@ const Platforms = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Your Voice, Everywhere
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             UpVachi seamlessly integrates with your favorite platforms,
             maintaining your unique voice across every conversation.
           </p>
@@ -163,24 +163,24 @@ const Platforms = () => {
                 <h3 className="text-4xl font-bold text-white mb-6">
                   {platform.name}
                 </h3>
-                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
                   {platform.story}
                 </p>
 
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-gradient-to-r from-[#35A7FF] to-[#824DFF] rounded-full shadow-lg shadow-[#35A7FF]/50"></div>
-                    <span className="text-gray-300">Real-time responses</span>
+                    <span className="text-zinc-300">Real-time responses</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-gradient-to-r from-[#824DFF] to-[#35A7FF] rounded-full shadow-lg shadow-[#824DFF]/50"></div>
-                    <span className="text-gray-300">
+                    <span className="text-zinc-300">
                       Personality-driven replies
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-gradient-to-r from-[#35A7FF] to-[#824DFF] rounded-full shadow-lg shadow-[#35A7FF]/50"></div>
-                    <span className="text-gray-300">
+                    <span className="text-zinc-300">
                       Lead conversion focused
                     </span>
                   </div>
@@ -192,7 +192,7 @@ const Platforms = () => {
                   className={`bg-gradient-to-br ${platform.bgGradient} rounded-3xl p-8 border border-white/10 backdrop-blur-sm relative`}
                 >
                   {/* Phone Frame */}
-                  <div className="bg-gradient-to-b from-gray-900 to-black rounded-[2.5rem] p-4 shadow-2xl shadow-black/50">
+                  <div className="bg-gradient-to-b from-zinc-900 to-black rounded-[2.5rem] p-4 shadow-2xl shadow-black/50">
                     <div className="bg-black rounded-[2rem] overflow-hidden">
                       {/* Status Bar */}
                       <div className="bg-black px-4 py-2 flex justify-between items-center text-white text-xs">
@@ -205,7 +205,7 @@ const Platforms = () => {
 
                       {/* Chat Header */}
                       <div
-                        className={`bg-gradient-to-r ${platform.bgGradient} px-4 py-3 flex items-center gap-3 border-b border-gray-800`}
+                        className={`bg-gradient-to-r ${platform.bgGradient} px-4 py-3 flex items-center gap-3 border-b border-zinc-800`}
                       >
                         <div
                           className={`w-8 h-8 rounded-full bg-gradient-to-r ${platform.gradient} flex items-center justify-center shadow-lg`}
@@ -214,7 +214,7 @@ const Platforms = () => {
                         </div>
                         <div>
                           <p className="text-white font-medium text-sm">Chat</p>
-                          <p className="text-gray-400 text-xs">Online</p>
+                          <p className="text-zinc-400 text-xs">Online</p>
                         </div>
                       </div>
 
@@ -233,7 +233,7 @@ const Platforms = () => {
                               className={`max-w-xs px-3 py-2 rounded-2xl text-sm ${
                                 message.type === "sent"
                                   ? `bg-gradient-to-r ${platform.gradient} text-white shadow-lg`
-                                  : "bg-gray-800 text-gray-200 border border-gray-700"
+                                  : "bg-zinc-800 text-zinc-200 border border-zinc-700"
                               }`}
                             >
                               <p>{message.text}</p>

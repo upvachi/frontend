@@ -51,7 +51,7 @@ const UseCases = () => {
       title: "Coaches",
       description: "Support your students with personalized messaging flows",
       icon: GraduationCap,
-      gradient: "from-[#101B30] via-[#5B6DA3] to-[#EFC4FF]", // Midnight → gray blue → pastel lavender
+      gradient: "from-[#101B30] via-[#5B6DA3] to-[#EFC4FF]", // Midnight → zinc blue → pastel lavender
       features: ["Progress tracking", "Student support", "Course engagement"],
       example: "Nurture students 24/7 with motivation, tips, and reminders.",
     },
@@ -66,7 +66,7 @@ const UseCases = () => {
   ];
 
   return (
-    <section id="use-cases" className="py-20 bg-gray-950 relative">
+    <section id="use-cases" className="py-20 bg-zinc-950 relative">
       {/* Neural Background */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 800">
@@ -102,7 +102,7 @@ const UseCases = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Perfect for Every Use Case
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Whether you're building a personal brand or scaling a business,
             UpVachi adapts to your unique needs
           </p>
@@ -112,7 +112,7 @@ const UseCases = () => {
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-3xl p-8 border border-gray-700 backdrop-blur-sm hover:border-[#35A7FF]/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#35A7FF]/10"
+              className="group bg-gradient-to-br from-zinc-900/80 to-zinc-800/80 rounded-3xl p-8 border border-zinc-700 backdrop-blur-sm hover:border-[#35A7FF]/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#35A7FF]/10"
             >
               <div
                 className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${useCase.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#35A7FF]/25`}
@@ -123,7 +123,7 @@ const UseCases = () => {
               <h3 className="text-2xl font-bold text-white mb-3">
                 {useCase.title}
               </h3>
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-zinc-300 mb-6 leading-relaxed">
                 {useCase.description}
               </p>
 
@@ -133,13 +133,13 @@ const UseCases = () => {
                     <div
                       className={`w-2 h-2 rounded-full bg-gradient-to-r ${useCase.gradient} shadow-lg`}
                     ></div>
-                    <span className="text-sm text-gray-300">{feature}</span>
+                    <span className="text-sm text-zinc-300">{feature}</span>
                   </div>
                 ))}
               </div>
 
               <div className="bg-gradient-to-br from-[#35A7FF]/10 to-[#824DFF]/10 rounded-2xl p-4 border border-[#35A7FF]/20">
-                <p className="text-sm text-gray-300 italic leading-relaxed">
+                <p className="text-sm text-zinc-300 italic leading-relaxed">
                   "{useCase.example}"
                 </p>
               </div>
@@ -152,7 +152,7 @@ const UseCases = () => {
             <h3 className="text-3xl font-bold text-white mb-6">
               Not Sure Which Use Case Fits You?
             </h3>
-            <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+            <p className="text-zinc-300 mb-8 text-lg leading-relaxed">
               UpVachi learns and adapts to your specific needs. Start with any
               use case and let it evolve with you.
             </p>

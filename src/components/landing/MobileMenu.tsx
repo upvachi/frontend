@@ -22,7 +22,7 @@ const MobileMenu = ({
       <a
         key={key}
         href={link.href}
-        className="font-semibold py-3 px-5 rounded-md transition-colors duration-200 hover:text-[#35A7FF] hover:bg-gray-100 dark:hover:bg-gray-800"
+        className="font-semibold py-3 px-5 rounded-md transition-colors duration-200 hover:text-[#35A7FF] hover:bg-zinc-100 dark:hover:bg-zinc-800"
         onClick={() => setIsOpen(false)}
       >
         {link.name}
@@ -40,11 +40,11 @@ const MobileMenu = ({
         />
       )}
       <div
-        className={`fixed top-0 left-0 h-screen w-80 bg-white dark:bg-gray-950 shadow-2xl transform transition-transform duration-300 z-50 lg:hidden ${
+        className={`fixed top-0 left-0 h-screen w-80 bg-white dark:bg-zinc-950 shadow-2xl transform transition-transform duration-300 z-50 lg:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="p-4 border-b border-gray-200 dark:border-gray-800">
+        <div className="p-4 border-b border-zinc-200 dark:border-zinc-800">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <img src={upvachiLogo} className="w-8 h-8" alt="UpVachi" />
