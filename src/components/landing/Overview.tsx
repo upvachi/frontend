@@ -2,7 +2,7 @@ import { Brain, Users, Zap } from "lucide-react";
 
 const Overview = () => {
   return (
-    <section id="overview" className="py-20 bg-gray-950 relative">
+    <section id="overview" className="py-20 bg-zinc-950 relative">
       {/* Subtle Neural Background */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 600">
@@ -38,7 +38,7 @@ const Overview = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What is UpVachi?
           </h2>
-          <p className="text-xl text-gray-300 leading-relaxed">
+          <p className="text-xl text-zinc-300 leading-relaxed">
             UpVachi isn't another chatbot or voice assistant. It's your digital
             "talker" — an AI-powered second voice that speaks on your behalf
             across major messaging platforms, using your unique tone, style, and
@@ -56,7 +56,7 @@ const Overview = () => {
                 <h3 className="text-2xl font-semibold text-white mb-3">
                   No Scripts, Pure Personality
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-zinc-300 leading-relaxed">
                   Unlike rigid chatbots, UpVachi learns your communication style
                   and reflects your genuine personality in every interaction.
                 </p>
@@ -71,7 +71,7 @@ const Overview = () => {
                 <h3 className="text-2xl font-semibold text-white mb-3">
                   Real-Time Responses
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-zinc-300 leading-relaxed">
                   Instant replies to DMs, comments, mentions, and lead messages
                   across Instagram, WhatsApp, and Facebook — 24/7.
                 </p>
@@ -86,7 +86,7 @@ const Overview = () => {
                 <h3 className="text-2xl font-semibold text-white mb-3">
                   Built for Creators & Businesses
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-zinc-300 leading-relaxed">
                   Perfect for creators who can't be everywhere, brands wanting
                   to scale with care, and individuals who need their own
                   assistant.
@@ -102,33 +102,33 @@ const Overview = () => {
               <div className="bg-gradient-to-br from-[#1e1e2f] to-[#2a2a44] rounded-2xl shadow-2xl p-8 border border-[#4A90E2]/30">
                 <div className="space-y-5">
                   <div>
-                    <p className="text-xs text-gray-400 mb-1">
+                    <p className="text-xs text-zinc-400 mb-1">
                       Personality Match
                     </p>
-                    <div className="h-4 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="h-4 bg-zinc-800 rounded-full overflow-hidden">
                       <div className="h-4 rounded-full shadow-md shadow-[#FFD93D]/60 w-4/5 bg-gradient-to-r from-[#824DFF] to-[#35A7FF]"></div>
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 mb-1">
+                    <p className="text-xs text-zinc-400 mb-1">
                       Emotional Intelligence
                     </p>
-                    <div className="h-4 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="h-4 bg-zinc-800 rounded-full overflow-hidden">
                       <div className="h-4 rounded-full shadow-md shadow-[#4A90E2]/60 w-3/5 bg-gradient-to-r from-[#FF6B6B] via-[#4A90E2] to-[#FFD93D]"></div>
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 mb-1">
+                    <p className="text-xs text-zinc-400 mb-1">
                       Response Accuracy
                     </p>
-                    <div className="h-4 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="h-4 bg-zinc-800 rounded-full overflow-hidden">
                       <div className="h-4 rounded-full shadow-md shadow-[#FF6B6B]/60 w-5/6 bg-gradient-to-r from-blue-600 to-rose-600"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="text-center mt-8">
-                <p className="text-gray-300 font-semibold text-sm tracking-wide">
+                <p className="text-zinc-300 font-semibold text-sm tracking-wide">
                   AI-Powered • Memory-Enabled • Emotionally Intelligent
                 </p>
               </div>

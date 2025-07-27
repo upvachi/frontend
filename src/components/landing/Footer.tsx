@@ -9,7 +9,7 @@ import {
 import upvachiLogo from "../../assets/images/upvachi.png";
 
 const Footer = () => (
-  <footer className="bg-gray-950 text-gray-200 border-t border-gray-800 pt-12 pb-6">
+  <footer className="bg-zinc-950 text-zinc-200 border-t border-zinc-800 pt-12 pb-6">
     <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between gap-10">
       {/* Logo & Socials */}
       <div className="flex flex-col items-center lg:items-start gap-6 min-w-[210px]">
@@ -18,14 +18,14 @@ const Footer = () => (
             <img
               src={upvachiLogo}
               alt="UpVachi Logo"
-              className="w-10 h-10 rounded-xl border border-gray-800 shadow"
+              className="w-10 h-10 rounded-xl border border-zinc-800 shadow"
             />
             <span className="text-xl font-extrabold text-white bg-clip-text drop-shadow-lg">
               UpVachi
             </span>
           </a>
         </div>
-        <div className="flex gap-4 text-gray-500 text-2xl">
+        <div className="flex gap-4 text-zinc-500 text-2xl">
           <a
             href="https://www.facebook.com/upvachi"
             target="_blank"
@@ -164,8 +164,8 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <hr className="my-8 border-gray-800" />
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+    <hr className="my-8 border-zinc-800" />
+    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
       <span>© {new Date().getFullYear()} UpVachi. All rights reserved.</span>
       <div className="flex flex-wrap gap-4">
         <a href="/about" className="hover:underline">

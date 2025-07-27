@@ -63,7 +63,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-gray-950 relative">
+    <section id="pricing" className="py-20 bg-zinc-950 relative">
       {/* Neural Background */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 800">
@@ -99,7 +99,7 @@ const Pricing = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
@@ -111,7 +111,7 @@ const Pricing = () => {
               className={`relative rounded-3xl p-8 border backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 ${
                 plan.popular
                   ? "border-[#35A7FF] bg-gradient-to-br from-[#35A7FF]/10 to-[#824DFF]/10 shadow-2xl shadow-[#35A7FF]/20 scale-105"
-                  : "border-gray-700 bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:border-gray-600 hover:shadow-xl"
+                  : "border-zinc-700 bg-gradient-to-br from-zinc-900/80 to-zinc-800/80 hover:border-zinc-600 hover:shadow-xl"
               }`}
             >
               {plan.popular && (
@@ -131,14 +131,14 @@ const Pricing = () => {
                 <h3 className="text-3xl font-bold text-white mb-3">
                   {plan.name}
                 </h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
+                <p className="text-zinc-300 mb-6 leading-relaxed">
                   {plan.description}
                 </p>
                 <div className="flex items-baseline justify-center gap-2">
                   <span className="text-5xl font-bold text-white">
                     {plan.price}
                   </span>
-                  <span className="text-gray-400 text-lg">/{plan.period}</span>
+                  <span className="text-zinc-400 text-lg">/{plan.period}</span>
                 </div>
               </div>
 
@@ -150,7 +150,7 @@ const Pricing = () => {
                     >
                       <Check className="w-3 h-3 text-white" />
                     </div>
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-zinc-300">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -159,7 +159,7 @@ const Pricing = () => {
                 className={`w-full py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 ${
                   plan.popular
                     ? "bg-gradient-to-r from-[#35A7FF] to-[#824DFF] text-white hover:from-[#2a8cdb] hover:to-[#6b3dd9] shadow-lg shadow-[#35A7FF]/25 hover:shadow-[#35A7FF]/40"
-                    : "bg-gradient-to-br from-gray-800 to-gray-700 text-white border border-gray-600 hover:border-gray-500"
+                    : "bg-gradient-to-br from-zinc-800 to-zinc-700 text-white border border-zinc-600 hover:border-zinc-500"
                 }`}
               >
                 {plan.cta}
@@ -173,7 +173,7 @@ const Pricing = () => {
             <h3 className="text-3xl font-bold text-white mb-6">
               Need a Custom Solution?
             </h3>
-            <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+            <p className="text-zinc-300 mb-8 text-lg leading-relaxed">
               We work with enterprises and agencies to create tailored UpVachi
               solutions for their specific needs.
             </p>

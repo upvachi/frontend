@@ -25,7 +25,7 @@ const bubbles = [
 const Hero: React.FC = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center w-full bg-gradient-to-br from-gray-950 via-[#0b1222] to-[#040a16] overflow-hidden px-8 gap-10 pt-30 pb-20"
+      className="flex flex-col items-center justify-center w-full bg-gradient-to-br from-zinc-950 via-[#040505] to-[#0d0e0f] overflow-hidden px-8 gap-10  py-20"
       style={{ minHeight: "calc(100vh - 64px)", marginTop: "64px" }}
     >
       {/* Floating Bubbles */}
@@ -45,10 +45,10 @@ const Hero: React.FC = () => {
         />
       ))}
 
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#FFD93D] via-[#4A90E2] to-[#FF6B6B] drop-shadow-xl text-center md:text-left">
+      <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#FFD93D] via-[#4A90E2] to-[#FF6B6B] drop-shadow-xl text-center md:text-left">
         Chat. Chirp. Conquer.
       </h1>
-      <p className="text-base sm:text-lg md:text-xl text-gray-300 font-medium text-center max-w-xl leading-relaxed">
+      <p className="text-base sm:text-lg md:text-xl text-zinc-300 font-medium text-center max-w-xl leading-relaxed">
         An AI-powered bird that chirps back to your clients, community, or
         friends on all your favorite platforms.
       </p>
