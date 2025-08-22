@@ -52,8 +52,8 @@ const Privacy = () => {
           <ul className="list-disc list-inside space-y-2 pl-4">
             <li>
               Visit our website at{" "}
-              <Link href="https://upvachi.vercel.app">
-                https://upvachi.vercel.app
+              <Link href="https://upvachi-live.web.app">
+                https://upvachi-live.web.app
               </Link>{" "}
               or any website of ours that links to this Privacy Notice
             </li>
@@ -391,8 +391,8 @@ const Privacy = () => {
               Like many businesses, we also collect information through cookies
               and similar technologies. You can find out more about this in our
               Cookie Notice:{" "}
-              <Link href="https://upvachi.vercel.app/cookies">
-                https://upvachi.vercel.app/cookies
+              <Link href="https://upvachi-live.web.app/cookies">
+                https://upvachi-live.web.app/cookies
               </Link>
               .
             </p>
@@ -736,8 +736,8 @@ const Privacy = () => {
           <p className="mt-4">
             Specific information about how we use such technologies and how you
             can refuse certain cookies is set out in our Cookie Notice:{" "}
-            <Link href="https://upvachi.vercel.app/cookies">
-              https://upvachi.vercel.app/cookies
+            <Link href="https://upvachi-live.web.app/cookies">
+              https://upvachi-live.web.app/cookies
             </Link>
             .
           </p>
@@ -1070,8 +1070,8 @@ const Privacy = () => {
               reject cookies, this could affect certain features or services of
               our Services. For further information, please see our Cookie
               Notice:{" "}
-              <Link href="https://upvachi.vercel.app/cookies">
-                https://upvachi.vercel.app/cookies
+              <Link href="https://upvachi-live.web.app/cookies">
+                https://upvachi-live.web.app/cookies
               </Link>
               .
             </p>
@@ -1466,8 +1466,8 @@ const Privacy = () => {
               data subject access request
             </Link>
             , by emailing us at upvachi@gmail.com, by visiting{" "}
-            <Link href="https://upvachi.vercel.app/contact">
-              https://upvachi.vercel.app/contact
+            <Link href="https://upvachi-live.web.app/contact">
+              https://upvachi-live.web.app/contact
             </Link>
             , or by referring to the contact details at the bottom of this
             document.

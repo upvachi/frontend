@@ -21,7 +21,7 @@ const LeftIllustration = () => {
         </h1>
       </div>
       {/* Premium Background Elements */}
-      <div className="absolute inset-0">
+      <div className="absolute">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-white/5 to-zinc-400/5 rounded-full blur-3xl animate-pulse" />
         <div
           className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-gradient-to-r from-zinc-300/5 to-white/5 rounded-full blur-3xl animate-pulse"
@@ -442,9 +442,8 @@ const LeftIllustration = () => {
               {[0, 1, 2, 3].map((i) => (
                 <path
                   key={i}
-                  d={`M${-180 + i * 25},${-120 + i * 35} Q${-60 + i * 15},${
-                    -60 + i * 25
-                  } ${80 + i * 15},${120 - i * 25}`}
+                  d={`M${-180 + i * 25},${-120 + i * 35} Q${-60 + i * 15},${-60 + i * 25
+                    } ${80 + i * 15},${120 - i * 25}`}
                   fill="none"
                   stroke="url(#premiumGrad2)"
                   strokeWidth="2"

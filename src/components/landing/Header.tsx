@@ -83,7 +83,7 @@ const Header = () => {
           <div className="flex gap-4">
             <a
               href="/auth/login"
-              className="p-2 rounded-xl font-bold hover:bg-zinc-800 transition-all text-white"
+              className="p-2 rounded-xl font-bold text-white"
             >
               Sign In
             </a>

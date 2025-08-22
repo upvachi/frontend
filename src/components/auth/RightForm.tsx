@@ -42,7 +42,6 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: "" }));
     }
@@ -167,7 +166,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
       return (
         <div className="space-y-6">
           <div>
-            <label className="block text-sm font-semibold text-zinc-300 mb-2">
+            <label htmlFor="email" className="block text-sm font-semibold text-zinc-300 mb-2">
               Email address
             </label>
             <input
@@ -189,7 +188,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-zinc-300 mb-2">
+            <label htmlFor="password" className="block text-sm font-semibold text-zinc-300 mb-2">
               Password
             </label>
             <div className="relative">
@@ -241,7 +240,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
         return (
           <div className="space-y-6">
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label htmlFor="fullName" className="block text-sm font-semibold text-zinc-300 mb-2">
                 Full name
               </label>
               <input
@@ -264,7 +263,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label htmlFor="email" className="block text-sm font-semibold text-zinc-300 mb-2">
                 Email address
               </label>
               <input
@@ -305,7 +304,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
               </div>
             )}
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label htmlFor="otp" className="block text-sm font-semibold text-zinc-300 mb-2">
                 Verification code
               </label>
               <input
@@ -334,7 +333,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
         return (
           <div className="space-y-6">
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label htmlFor="password" className="block text-sm font-semibold text-zinc-300 mb-2">
                 Password
               </label>
               <div className="relative">
@@ -370,7 +369,7 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-zinc-300 mb-2">
+              <label htmlFor="confirmPassword" className="block text-sm font-semibold text-zinc-300 mb-2">
                 Confirm password
               </label>
               <input
@@ -408,8 +407,8 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
           </h1>
           <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
             {isLogin
-              ? "Welcome back! Please log in to continue."
-              : "Get started with UpVachi — it's free"}
+              ? "Log in to your UpVachi account."
+              : "Join UpVachi today — it's free."}
           </p>
         </div>
 
@@ -418,12 +417,12 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
           {renderStepContent()}
 
           {/* Navigation Buttons */}
-          <div className="flex items-center justify-between mt-8">
+          <div className={`flex items-center justify-between ${isLogin && "justify-center"} mt-8`}>
             {!isLogin && currentStep > 1 && (
               <button
                 type="button"
                 onClick={handleBack}
-                className="flex items-center justify-center gap-2 py-4 px-6 bg-zinc-800 hover:bg-zinc-700 text-white rounded-full transition-all duration-300 font-medium min-w-[120px] mr-4"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-zinc-800 hover:bg-zinc-700 text-white rounded-full transition-all duration-300 font-medium"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back
@@ -434,9 +433,9 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
               type="button"
               onClick={handleNext}
               disabled={isLoading}
-              className={`transition-all duration-300 flex items-center justify-center font-semibold shadow-lg disabled:opacity-70 disabled:cursor-not-allowed text-zinc-950 ${isLoading
+              className={`group transition-all duration-300 flex items-center justify-center font-semibold shadow-lg disabled:opacity-70 disabled:cursor-not-allowed text-zinc-950 ${isLoading
                 ? "w-12 h-12 p-0 rounded-full bg-white"
-                : `${!isLogin && currentStep > 1 ? 'min-w-[120px]' : 'w-full'} py-4 px-6 rounded-full bg-white hover:bg-zinc-100 gap-3 hover:shadow-xl hover:scale-[1.02]`
+                : `${currentStep === 1 ? "w-full" : ""} px-6 py-3 rounded-full bg-white hover:bg-zinc-100 gap-3 hover:shadow-xl hover:scale-[1.02]`
                 }`}
             >
               {isLoading ? (
@@ -474,11 +473,11 @@ const RightForm = ({ isLogin, setIsLogin }: { isLogin: boolean, setIsLogin: (val
         {!isLogin && (
           <div className="mt-6 text-xs text-zinc-500 text-center leading-relaxed">
             By creating an account, you agree to our{" "}
-            <a href="#" className="text-white hover:text-zinc-300 font-medium">
+            <a href="/terms" target="_blank" className="text-white hover:text-zinc-300 font-medium">
               Terms of Service
             </a>{" "}
             and{" "}
-            <a href="#" className="text-white hover:text-zinc-300 font-medium">
+            <a href="/privacy" target="_blank" className="text-white hover:text-zinc-300 font-medium">
               Privacy Policy
             </a>
           </div>

@@ -60,8 +60,8 @@ const Terms = () => {
           </p>
           <p className="mb-4 leading-relaxed">
             We operate the website{" "}
-            <Link href="https://upvachi.vercel.app">
-              https://upvachi.vercel.app
+            <Link href="https://upvachi-live.web.app">
+              https://upvachi-live.web.app
             </Link>{" "}
             (the "<strong>Site</strong>"), the mobile application{" "}
             <strong>UpVachi</strong> (the "<strong>App</strong>"), as well as
@@ -1118,8 +1118,8 @@ const Terms = () => {
             We care about data privacy and security. Please review our Privacy
             Policy:{" "}
             <strong>
-              <Link href="https://upvachi.vercel.app/privacy">
-                https://upvachi.vercel.app/privacy
+              <Link href="https://upvachi-live.web.app/privacy">
+                https://upvachi-live.web.app/privacy
               </Link>
             </strong>
             . By using the Services, you agree to be bound by our Privacy
