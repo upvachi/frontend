@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "upvachi"
+  },
+  "targets": {
+    "upvachi": {
+      "hosting": {
+        "upvachi-live": [
+          "upvachi-live"
+        ]
+      }
+    }
   }
 }
